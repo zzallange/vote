@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+body,html {margin: 0; padding: 0; position: relative; width: 100%; font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif; color:#111;}
+div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,textarea,input,legend,table,th,td,button,figure,span {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal; }
+ul,li,ol,dl,dt,dd {list-style: none;}
+address,caption,cite,code,dfn,em,th {font-style:normal; font-weight:normal;}
+a {display:inline-block; text-decoration: none; color: #111;-webkit-tap-highlight-color: rgba(0,0,0,0); }
+a::after, a::before {-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+a:link,a:visited,a:active {text-decoration:none;}
+button {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+button::-moz-focus-inner{border:0;padding:0;}
+input:checked[type=checkbox]{-webkit-appearance:checkbox;}
+input[type=button],input[type=email],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=url],textarea,select{appearance:none; -webkit-appearance:none; -moz-appearance:none; border-radius:0; border:0 none;}
+input:focus,textarea:focus{outline:none;}
+span {display: inline-block;}
+img {width: 100%;}
+fieldset, img, abbr, acronym,button {border:0 none;}
+button{border:0 none;background-color:transparent;cursor:pointer;outline:none;}
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+table {border:0 none; border-collapse:collapse; border-spacing:0; vertical-align:top;}
+/* 읽기 전용 레이블 숨김*/
+legend, .ir {font-size: 0; line-height: 0; color: transparent;}
+/* 대체텍스트 숨김 */
+.skip {font-size: 0; line-height: 0; color: transparent;width: 0;height: 0;}
+
+/* Layout */
+#wrap {width:100%; }
+#wrap [class*="_inner"]{position: relative; margin: 0 auto; width: 990px; overflow: visible;}
+#header,#container,#footer {width: 100%;position:relative;}
+.header:after, .container:after, .footer:after {content:'';display: block;clear: both;}
+
+/* Header */
+.header {width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/election2020/main/top_bg.png) 0 0 no-repeat; }
+.header .top_hd {padding: 13px 20px 0; height: 45px; box-sizing: border-box; font-size: 0;}
+.header .top_hd .logo {display: inline-block; }
+.header .top_hd .logo a {position: relative; display: block; width: 80px; height: 18px; margin-right: 21px; background: url(https://cwstatic.asiae.co.kr/election2020/main/logo.png) no-repeat; background-size: contain;}
+.header .top_hd .logo a:after {content:'';display: block; position: absolute; right: -10px; top: 4px; width: 1px; height: 10px; background: #fff;}
+.header .top_hd .vote_h1 { width: 142px; height: 18px; background: url(https://cwstatic.asiae.co.kr/election2020/main/vote_h1.png) no-repeat; background-size: contain; }
+.header .top_hd .vote_h2 {float:right; width: 123px; height: 18px; background: url(https://cwstatic.asiae.co.kr/election2020/main/vote_h2.png) no-repeat; background-size: contain;}
+
+.header .vote_menu {border-bottom: 1px solid rgba(255,255,255,.1); box-sizing: border-box;}
+
+/* nav */
+.header .vote_menu .nav {width: 100%; overflow: hidden; position: relative; text-align: center; height: 90px;}
+.header .vote_menu .nav .scroll {overflow:hidden; overflow-x:auto; width:100%;}
+.header .vote_menu .nav ul {width: 100%;height: 100%; font-size: 0; white-space: nowrap;}
+.header .vote_menu .nav ul:after {content:'';display: block;clear: both;}
+.header .vote_menu .nav ul li {position: relative; display: inline-table; margin:0px;}
+.header .vote_menu .nav ul li a {position: relative; width: 130px; height: 90px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu_bg.png') no-repeat; background-position:0 -90px;}
+.header .vote_menu .nav ul li:hover a {transition: background-position .2s ease-in-out; background-position:0 4px;}
+
+.header .vote_menu .nav ul li .menu01 .txt {display:inline-block; margin-top:30px; width:18px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu01.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu02 .txt {display:inline-block; margin-top:30px; width:66px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu02.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu03 .txt {display:inline-block; margin-top:30px; width:51px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu03.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu04 .txt {display:inline-block; margin-top:30px; width:69px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu04.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu05 .txt {display:inline-block; margin-top:30px; width:70px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu05.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu06 .txt {display:inline-block; margin-top:35px; width:34px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu06.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu07 .txt {display:inline-block; margin-top:30px; width:46px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu07.png') no-repeat 0 0;}
+
+.header .vote_menu .nav ul li .menu01:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu01_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu02:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu02_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu03:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu03_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu04:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu04_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu05:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu05_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu06:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu06_on.png') no-repeat 0 0;}
+.header .vote_menu .nav ul li .menu07:hover .txt {background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu07_on.png') no-repeat 0 0;}
+
+.header .vote_menu .nav ul li .menu_ico {position:absolute; bottom:-24px; left: 50%; width:23px; height:23px; background:url('https://cwstatic.asiae.co.kr/election2020/main/menu/menu_ico.png') no-repeat 0 0; -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); transform: translate(-50%, 0);}
+.header .vote_menu .nav ul li:hover .menu_ico {transition: bottom .2s ease-in-out; bottom:10px;}
+
+/* content */
+.content {width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/election2020/main/bg_main.png) top center no-repeat;}
+
+/* footer */
+.footer {clear: both; position: relative; width: 100%; overflow: hidden; text-align: center; height: 185px; background: url(https://cwstatic.asiae.co.kr/election2020/main/ft_bg.png) top center no-repeat;}
+.footer p {margin-top: 125px; font-family: 'notokrR'; font-size: 13px; color:#595959; }
+
+/* paginate */
+.paging {overflow:hidden; margin:50px 0 100px; position:relative; width:100%; text-align:center; font-size: 0;}
+.paging .in_page {display:inline-block;}
+.paging .in_page:after {content:''; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.paging .in_page .number {width: 100%;}
+.paging .in_page .number li {float: left; border:1px solid #e6e6e6; box-sizing: border-box; font-size: 13px; font-weight: bold; color: #9c9c9c; }
+.paging .in_page .number li a {display:block; width: 40px; height: 40px; line-height: 40px; font-size: 13px; font-weight: bold; color: #9c9c9c;}
+.paging .in_page .number li .btn_pg {width: 60px; letter-spacing: -1px;}
+.paging .in_page .number li .prev {margin-right: -1px;}
+.paging .in_page .number li .next {margin-left: -1px;}
+.paging .in_page .number li .link_on {color: #fff; background: #0083fb;}
+
+/* sns공유 레이어팝업 */
+.wrapsns_layer.active {display:block;}
+.wrapsns_layer {display:none; overflow:hidden; position:fixed; top:0; left:0; width:100%; height:100%; z-index:110;}
+.wrapsns_layer:before {content:''; position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba(0,0,0,0.6); z-index:100;}
+
+.sns_layer {display:none; width:100%;}
+.sns_layer .inner {position:relative; width:280px; margin:0 auto; padding:15px 0; background:#fff;}
+.sns_layer h2 {padding:0 0 0 15px; color:#262626; font-size:16px;}
+.sns_layer .btn_close {position:absolute; top:0; right:0; display:block; width:13px; height:14px; padding:15px;}
+.sns_layer .btn_close span {display:inline-block; width:100%; height:100%; font-size:0; line-height:0; color:transparent; vertical-align:top; background:url('https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_sns2019.png') no-repeat 0 0; background-size:412px 45px;}
+
+.sns_layer .sns_list {padding:15px 0 15px;}
+.sns_layer .sns_list ul {overflow:hidden; width:240px; margin:0 auto;}
+.sns_layer .sns_list ul:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.sns_layer .sns_list ul li {float:left; width:60px; margin:6px 0;}
+.sns_layer .sns_list ul li a {display:block; padding:0; text-align:center; vertical-align:top;}
+.sns_layer .sns_list ul li a .ico, .sns_layer .sns_list ul li a strong {vertical-align:top;}
+.sns_layer .sns_list ul li a .ico {display:inline-block; width:45px; height:45px; font-size:0; line-height:0; color:transparent; vertical-align:top; background:url('https://cwstatic.asiae.co.kr/mdot_2013/v6/ico_sns2019.png') no-repeat 0 0; background-size:412px 45px;}
+.sns_layer .sns_list ul li a strong {display:table; width:100%; height:28px; margin:5px 0 0;}
+.sns_layer .sns_list ul li a strong em {display:table-cell; color:#1a1a1a; font-size:13px; letter-spacing:-1px; text-align:center; vertical-align:middle;}
+
+.sns_layer .sns_list ul li.facebook a .ico {background-position:-17px 0;}
+.sns_layer .sns_list ul li.twitter a .ico {background-position:-67px 0;}
+.sns_layer .sns_list ul li.kakao a .ico {background-position:-117px 0;}
+.sns_layer .sns_list ul li.kakaostory  a .ico {background-position:-167px 0;}
+.sns_layer .sns_list ul li.line a .ico {background-position:-217px 0;}
+.sns_layer .sns_list ul li.band a .ico {background-position:-267px 0;}
+.sns_layer .sns_list ul li.blog a .ico {background-position:-317px 0;}
+.sns_layer .sns_list ul li.url a .ico {background-position:-367px 0;}
+
+.sns_layer .url_copy {overflow:hidden; width:229px; margin:0 auto;}
+.sns_layer .url_copy:after {content:" "; display:block; clear:both; font-size:0; line-height:0; height:0;}
+.sns_layer .url_copy input, .sns_layer .url_copy a  {float:left; display:block; vertical-align:top;}
+.sns_layer .url_copy input {overflow:hidden; width:140px; height:30px; padding:0 10px; font-size:12px; color:#595959; text-overflow:ellipsis; white-space:nowrap; border:1px solid #d9d9d9; border-right:0; background:#fff;}
+.sns_layer .url_copy a {width:66px; height:30px; color:#1a1a1a; font-size:12px; text-align:center; line-height:30px; border:1px solid #d9d9d9; background:#fff;}
+
+.wrapsns_layer .sns_layer {overflow-x:hidden; overflow-y:hidden; display:block; position:absolute; top:50%; left:50%; width:280px; height:300px; -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); transform:translate(-50%, -50%); box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:300;}
+.wrapsns_layer .sns_layer .inner {position:relative; margin:0; padding:15px 0 0; background:#fff;}
+
+/* Top 버튼 */
+a.btn_top {position:fixed; bottom:50px; right:16px; width:64px; height:64px; font-size:0; color:transparent; vertical-align:top; cursor:pointer; background:url('https://cwstatic.asiae.co.kr/def_v2/ico_top.png') no-repeat; background-size: contain; visibility:hidden; opacity:0; -webkit-transition: all .3s;transition: all .3s; z-index:50;}
+a.btn_top, a.btn_top * {display:block; vertical-align:top;}
+a.btn_top.on {visibility:visible; opacity:1;}
+a.btn_top.lay_active {visibility:hidden; opacity:0;}
+html.full_html02 a.btn_top {z-index:30;}
+
+
+@media only screen and (max-width:1100px){
+    #wrap [class*="_inner"]{width: 100%;}
+}
+
+@media only screen and (max-width:425px){
+    /* paginate */
+    .paging .in_page .number li a {width: 35px; height: 35px; line-height: 35px;}
+    .paging .in_page .number li .btn_pg {width: 50px; font-size: 12px;}
+    
+    a.btn_top {width: 46px;height:46px;}
+}
+@media only screen and (max-width:345px){
+    /* paginate */
+    .paging .in_page .number li a {width: 30px; height: 30px; line-height: 30px;}
+    .paging .in_page .number li .btn_pg {width: 50px; font-size: 12px;}
+
+}
+
+
+
+
+
+
+
+
+
+
