@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* webkit */
+.box-sizing {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.transform {-webkit-transform: translate(); -moz-transform: translate(); transform: translate();}
+
+/* 빅매치 title */
+.mtch_slide {position:relative; overflow:hidden; padding-top: 20px; width:100%; height:260px; margin-bottom: 40px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.mtch_slide .match_lst, .mtch_slide .match_lst > div {overflow:hidden; width:100%; height:240px;}
+.mtch_slide .match_lst {overflow:visible; overflow-x:visible; margin:0; padding:0; white-space:nowrap; font-size:0;}
+.mtch_slide .match_lst > div .slick-track {height:100%; margin:0;}
+.mtch_slide .match_lst > div .slick-slide > div, .mtch_slide .match_lst > div .slick-slide > div > div {height:100%;}
+
+.mtch_slide .match_lst > div {position:relative; width:100%; height:100%; display:inline-block; white-space:normal; vertical-align:top;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a, .mtch_slide .match_lst > div .slick-slide > div > div > a .thumb {display:block; vertical-align:top;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a {position:relative; width:100%; height:100%; text-align:center; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .thumb {position:absolute; width: 820px; height: 248px;top: 50%; left: 50%; transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); color: transparent; font-size: 0; line-height: 0; text-indent: -999px;}
+
+/* 빅매치 slide 이미지 */
+.mtch_slide .match_lst > div .slick-slide > div > div > a .img01 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/mch_01.png) no-repeat; background-size: contain;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .img02 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/mch_02.png) no-repeat; background-size: contain;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .img03 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/mch_03.png) no-repeat; background-size: contain;}
+/* //빅매치 slide 이미지 */
+
+.mtch_slide .match_lst > div .slick-slide > div > div > a .top_txt, .mtch_slide .mtch_lst > div .slick-slide > div > div > a .top_txt em, .mtch_slide .mtch_lst > div .slick-slide > div > div > a .txt_box, .mtch_slide .mtch_lst > div .slick-slide > div > div > a .txt_box em {vertical-align:top; }
+.mtch_slide .match_lst > div .slick-slide > div > div > a .top_txt {position:absolute; top:0; left:0; width:100%; display:block; text-align:center; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:2;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .top_txt em {display:inline-block; padding:0 10px; color:#fff; font-size:16px; letter-spacing:-1px; line-height:38px; background:#e54040;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .txt_box, .mtch_slide .match_lst > div .slick-slide > div > div > a .txt_box em {display:block;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .txt_box {position:absolute; top:60px; left:0; width:100%; padding:0 30px; color:#fff; font-family:'nanumSquareb'; font-size:36px; font-weight:500; letter-spacing:-1.5px; line-height:44px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; z-index:200;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a .txt_box em {overflow:hidden; padding:15px 0 0 0; font-size:17px; color:#4b99f9; font-weight:normal; line-height:21px; letter-spacing:-1px; text-overflow:ellipsis; white-space:nowrap;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a:hover .txt_box {text-decoration:none;}
+.mtch_slide .match_lst > div .slick-slide > div > div > a:hover .txt_box em {text-decoration:none!important;}
+
+.mtch_slide .match_lst > button {position:absolute; top:50%;transform: translateY(-50%);-webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); width:26px; height:50px; font-size:0; line-height:0; color:transparent;  z-index:2;}
+.mtch_slide .match_lst > button.slick-prev {background:url('https://cwstatic.asiae.co.kr/election2020/bigmatch/arr_l.png') no-repeat;background-size: contain;}
+.mtch_slide .match_lst > button.slick-prev:hover {background:url('https://cwstatic.asiae.co.kr/election2020/bigmatch/on_arrl.png') no-repeat;background-size: contain;}
+.mtch_slide .match_lst > button.slick-next {right:0;background:url('https://cwstatic.asiae.co.kr/election2020/bigmatch/arr_r.png') no-repeat;background-size: contain;}
+.mtch_slide .match_lst > button.slick-next:hover {background:url('https://cwstatic.asiae.co.kr/election2020/bigmatch/on_arrR.png') no-repeat;background-size: contain;}
+
+.mtch_tab {margin-bottom: 40px; text-align: center;}
+.mtch_tab ul {display: inline-block;}
+.mtch_tab ul:after {content:'';display: block;clear: both;}
+.mtch_tab ul li {float: left; margin-left: 20px;}
+.mtch_tab ul li:first-child {margin-left: 0;}
+.mtch_tab ul li a {padding: 10px 60px; border-radius: 5px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; background: #F2F2F2; font-size: 20px; text-align: center; letter-spacing: -1px; font-family: 'notokrR'; color: #595959;}
+.mtch_tab ul li a.on, .mtch_tab ul li a:hover {background:#FF7D6B; color: #fff; }
+
+
+@media only screen and (max-width:1100px){
+    .match_wrap {position: relative; padding: 0 20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .thumb {width: 720px; height: 220px;}
+}
+@media only screen and (max-width:860px){
+    .mtch_slide .match_lst > button {width: 20px; height: 40px;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .thumb {width: 640px; height: 195px;}
+    
+    .mtch_tab ul {width: 100%;}
+    .mtch_tab ul li {width: 23%; height: auto; margin-left: 2%;}
+    .mtch_tab ul li a {width: 100%; padding: 0; font-size: 18px; line-height: 50px }
+}
+@media only screen and (max-width:767px){
+    .content {width: 100%; height: auto; background: url(https://cwstatic.asiae.co.kr/election2020/main/mobile/mobile_bg_0309.png) no-repeat 0 0; background-size: contain;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .thumb {width: 300px; height: 241px;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .img01 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/m_mch_01.png) no-repeat; background-size: contain;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .img02 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/m_mch_02.png) no-repeat; background-size: contain;}
+    .mtch_slide .match_lst > div .slick-slide > div > div > a .img03 {background: url(https://cwstatic.asiae.co.kr/election2020/bigmatch/m_mch_03.png) no-repeat; background-size: contain;}
+    
+    .mtch_tab ul li a {font-size: 15px;}
+    
+    /* 연관키워드보기 */
+    .btn_keywrd {position: absolute; left: 0; bottom: 0; width:100%; height: 50px; background: #6256FF; border-radius: 10px;box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .btn_keywrd a {width: 100%; color: #fff; letter-spacing: -1px; text-align: center; font-size: 16px; line-height: 50px;}
+}
+@media only screen and (max-width:425px){
+    .mtch_slide {margin-bottom: 20px;}
+    .mtch_tab ul li {margin-left: 5px;}
+    .mtch_tab ul li a {}
+}
+@media only screen and (max-width:320px){
+    .mtch_tab ul li a {font-size: 14px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
